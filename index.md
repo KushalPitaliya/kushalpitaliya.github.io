@@ -32,7 +32,7 @@ To use **text-parsematch**, ensure your system meets these requirements:
 - **Operating System**: Windows 10 or later, macOS Mojave or later, any major Linux distribution
 - **Memory**: At least 4 GB RAM
 - **Storage**: Minimum of 100 MB free disk space
-- **Software**: Java Runtime Environment version 8 or higher
+- **Software**: Python 3.9 or higher, pip package manager
 
 ## 📖 How to Use
 
@@ -44,18 +44,20 @@ Follow these steps to download and run the application:
 2. **Download the Latest Version**  
    Find the latest version. Click on the version number, and you’ll see a list of files. You might see options like `.exe` for Windows or `.jar` for macOS and Linux.
 
-3. **Run the Application**  
-   - For Windows: You can double-click the `.exe` file to start the app.
-   - For macOS/Linux: Open your terminal, navigate to the folder where you downloaded the file, and run the command:
-     ```
-     java -jar text-parsematch.jar
-     ```
+3. **Install the Package**  
+   Open your terminal and run:
+   ```
+   pip install text-parsematch
+   ```
 
-4. **Input Your Data**  
-   Once the application is running, input the text you want to process. Use the user-friendly interface to guide you.
+4. **Use in Your Code**  
+   ```python
+   from text_parsematch import text_parsematch
+   results = text_parsematch("Your input text here")
+   ```
 
 5. **View Your Results**  
-   The application will show you the processed data. You can export this data to a desired format if needed.
+   The function returns structured, validated output ready for further processing.
 
 ## ⚙️ Advanced Options
 
